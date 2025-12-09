@@ -1,0 +1,96 @@
+---
+title: Explore Alfie Host Features
+description: Discover the core capabilities that make Alfie Host an essential tool for modern hosts, from AI-powered queries to analytics.
+---
+
+## Overview
+
+Alfie Host transforms guest experiences with AI-driven features that handle inquiries seamlessly. You provide instant answers to common questions about check-in, amenities, and local spots, reducing interruptions while boosting reviews. Explore how natural language chat, automation, analytics, and mobile access empower your hosting.
+
+<Columns cols={2}>
+  <Card title="Natural Language Chat" icon="message-circle" href="/docs/chat">
+    Guests ask questions in everyday language, and Alfie responds instantly.
+  </Card>
+  <Card title="Automated Queries" icon="zap" href="/docs/automation">
+    Set up predefined responses for FAQs without manual intervention.
+  </Card>
+  <Card title="Feedback & Analytics" icon="bar-chart-3" href="/docs/analytics">
+    Track interactions and gather reviews to refine your manual.
+  </Card>
+  <Card title="Mobile Accessibility" icon="smartphone" href="/docs/mobile">
+    Fully responsive design ensures guests access info on any device.
+  </Card>
+</Columns>
+
+## Natural Language Chat Functionality
+
+Enable guests to converse naturally with your digital manual. Powered by advanced AI, it understands context and delivers precise answers about Wi-Fi passwords, parking details, or nearby restaurants.
+
+<Tabs>
+  <Tab title="Guest View" icon="user">
+    Guests type queries like "Where's the nearest coffee shop?" and receive tailored responses with maps and hours.
+  </Tab>
+  <Tab title="Host Setup" icon="settings">
+    Customize responses in your dashboard. Add your property's specifics for personalized interactions.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Start with 10-15 common queries to cover `>80%` of guest questions.
+</Callout>
+
+## Automated Query Handling
+
+Automate responses to repetitive questions, freeing you to focus on hospitality. Define rules for check-in times, house rules, and amenities.
+
+<Steps>
+  <Step title="Define Queries" icon="edit-3">
+    Log in to your Alfie Host dashboard and navigate to the Automation section.
+  </Step>
+  <Step title="Set Responses" icon="check-circle">
+    Enter trigger phrases and craft helpful replies.
+  </Step>
+  <Step title="Test & Deploy" icon="play">
+    Preview interactions before going live.
+  </Step>
+</Steps>
+
+For custom integrations, embed the chat widget:
+
+<CodeGroup tabs="HTML,React">
+  ```html
+  <script src="https://alfiehost.com/widget.js" data-property="your-property-id"></script>
+  <div id="alfie-chat"></div>
+  ```
+  ```jsx
+  import { AlfieChat } from '@alfiehost/widget';
+
+  function App() {
+    return <AlfieChat propertyId="your-property-id" />;
+  }
+  ```
+</CodeGroup>
+
+## Guest Feedback and Analytics
+
+Monitor engagement with built-in analytics. Track query volume, popular topics, and satisfaction scores to optimize your manual.
+
+| Metric | Description | Benefit |
+|--------|-------------|---------|
+| Query Volume | Total questions per day | Identify peak times |
+| Top Topics | Most asked categories | Prioritize updates |
+| Feedback Score | Guest ratings (1-5 stars) | Improve reviews |
+
+<Expandable title="Advanced Analytics Setup" default-open="false">
+  Connect to Google Analytics by adding your tracking ID in settings. View detailed reports on guest behavior and conversion to bookings.
+</Expandable>
+
+## Mobile Accessibility for Guests
+
+Ensure seamless access on phones and tablets. The responsive design adapts to any screen size, with touch-friendly navigation.
+
+<Callout kind="success">
+  Mobile users represent `>70%` of guest interactions—optimize now for maximum impact.
+</Callout>
+
+You configure mobile-specific shortcuts, like QR codes linking directly to check-in info. Test across devices to guarantee a frictionless experience.

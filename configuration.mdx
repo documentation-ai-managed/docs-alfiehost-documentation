@@ -1,0 +1,123 @@
+---
+title: Customize Your Guest Manual
+description: Learn how to tailor the content, responses, and appearance of your digital manual to fit your property's unique needs.
+---
+
+## Overview
+
+Customize your Alfie Host guest manual to match your property's personality and guest expectations. Update check-in details, add personalized local tips, tweak chat responses, and handle multiple listings from one dashboard. These changes help deliver a seamless experience that boosts reviews.
+
+<Columns cols={3}>
+  <Card title="Check-in Instructions" icon="calendar" href="#check-in">
+    Set arrival times and access codes.
+  </Card>
+  <Card title="Local Recommendations" icon="map-pin" href="#recommendations">
+    Highlight nearby dining and sights.
+  </Card>
+  <Card title="Chat Responses" icon="message-circle" href="#responses">
+    Fine-tune AI replies for your style.
+  </Card>
+</Columns>
+
+## Edit Check-in Instructions
+
+Update your property's arrival process to guide guests smoothly.
+
+<Steps>
+  <Step title="Access Dashboard" icon="monitor">
+    Log in to your Alfie Host account and select your property.
+  </Step>
+  <Step title="Navigate to Check-in" icon="settings">
+    Go to the `Configuration` tab, then `Check-in Instructions`.
+  </Step>
+  <Step title="Edit Details" icon="edit-3">
+    Enter specifics like:
+
+    ```
+    Arrival: After 3 PM
+    Key code: 4927
+    Parking: Free street parking available
+    ```
+
+    Preview changes before saving.
+  </Step>
+  <Step title="Publish" icon="check-circle">
+    Click `Publish` to make updates live for new guests.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Include Wi-Fi details (`network: GuestWiFi`, `password: Beach123`) here to reduce first-night questions.
+</Callout>
+
+## Add Local Recommendations
+
+Curate tips for restaurants, attractions, and services near your property.
+
+<Tabs>
+  <Tab title="Restaurants" icon="utensils">
+    Add spots like:
+
+    | Name              | Distance | Notes                  |
+    |-------------------|----------|------------------------|
+    | Ocean Breeze Cafe | `<1km`  | Fresh seafood, open late |
+    | Mountain Grill    | `2km`   | Vegan options available |
+
+    Use the `+ Add Recommendation` button.
+  </Tab>
+  <Tab title="Attractions" icon="landmark">
+    Suggest activities:
+
+    - Sunset Beach (walking distance)
+    - Local Market (Saturdays only)
+  </Tab>
+</Tabs>
+
+## Customize Chat Responses
+
+Tailor AI replies to reflect your hosting style, from formal to friendly.
+
+<CodeGroup tabs="Formal,Friendly">
+  ```json
+  {
+    "welcome": "Welcome to Cozy Beach Cottage. How may I assist you today?"
+  }
+  ```
+  ```json
+  {
+    "welcome": "Hey there! Welcome to your beach getaway. What's up?"
+  }
+  ```
+</CodeGroup>
+
+<Expandable title="Advanced Customization" default-open="false">
+  Edit response templates in `Chat Settings`. Use placeholders like `{guest_name}` or `{property_name}` for personalization.
+
+  Example:
+
+  ```json
+  {
+    "checkin": "Hi {guest_name}, your key code for {property_name} is 4927. Safe travels!"
+  }
+  ```
+</Expandable>
+
+## Manage Multiple Properties
+
+Switch between listings effortlessly.
+
+<Steps>
+  <Step title="Add Property" icon="plus">
+    From dashboard, click `+ New Property` and enter details like address and photos.
+  </Step>
+  <Step title="Switch Properties" icon="switch">
+    Use the property selector dropdown at the top.
+  </Step>
+  <Step title="Copy Configurations" icon="copy">
+    Apply settings from one property to others via `Duplicate Config`.
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  Changes sync instantly across devices. Test updates with the preview mode before going live.
+</Callout>

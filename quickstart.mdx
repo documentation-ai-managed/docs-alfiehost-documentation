@@ -1,0 +1,102 @@
+---
+title: Get Started Quickly
+description: A step-by-step guide to set up your first Alfie Host guest manual and start using it with your guests.
+---
+
+## Overview
+
+Set up your Alfie Host guest manual in under 10 minutes. This digital guide answers guest questions instantly via natural language chat, covering check-in details, property features, and local tips. Follow these steps to create your account, complete the setup wizard, add property information, and test the interface.
+
+<Callout kind="tip">
+  You need a valid email address and property details ready, such as address and amenities.
+</Callout>
+
+## Setup Steps
+
+Use these numbered steps to launch your first guest manual.
+
+<Steps>
+  <Step title="Create Your Account" icon="user-plus">
+    Visit [app.alfiehost.com/signup](https://app.alfiehost.com/signup) and sign up with your email.
+
+    Enter your hosting business name, like "Cozy Cabins LLC", and create a strong password.
+
+    Verify your email via the confirmation link sent to your inbox.
+  </Step>
+
+  <Step title="Complete Initial Setup Wizard" icon="sparkles">
+    After login, the wizard guides you through essentials.
+
+    Select your property type (e.g., apartment, vacation home) and time zone.
+
+    Connect your calendar (Airbnb, Vrbo, or Google Calendar) by pasting the ICS URL, such as `https://calendar.google.com/calendar/ical/yourcalendar%40group.calendar.google.com/private-abc123/basic.ics`.
+
+    Review and save settings.
+  </Step>
+
+  <Step title="Add Basic Property Information" icon="home">
+    Navigate to **Properties** > **Add New**.
+
+    Fill in details:
+
+    | Field          | Example Value                  |
+    |----------------|--------------------------------|
+    | Address        | 123 Maple Street, Austin, TX   |
+    | Max Guests     | 4                              |
+    | Amenities      | Wi-Fi, Parking, Pool           |
+    | Check-in Time  | 4:00 PM                        |
+
+    Upload photos and save. Your guest manual generates automatically.
+  </Step>
+
+  <Step title="Test the Guest Chat Interface" icon="message-circle">
+    Preview your manual at the generated URL, like `https://alfiehost.com/manual/your-property-id`.
+
+    <Tabs>
+      <Tab title="Web Browser" icon="globe">
+        Open in Chrome or Safari. Ask: "What's the Wi-Fi password?" Expect: "Wi-Fi: GuestNet (password: Welcome123)"
+      </Tab>
+      <Tab title="Mobile" icon="smartphone">
+        Scan the QR code from your dashboard. Test voice input for hands-free queries.
+      </Tab>
+    </Tabs>
+
+    Embed on your site with this snippet:
+
+    <CodeGroup tabs="HTML,React">
+    ```html
+    <script src="https://cdn.alfiehost.com/widget.js" data-property-id="prop_abc123xyz"></script>
+    ```
+    ```jsx
+    import { AlfieHostChat } from '@alfiehost/widget';
+    <AlfieHostChat propertyId="prop_abc123xyz" />
+    ```
+    </CodeGroup>
+  </Step>
+</Steps>
+
+## Next Steps
+
+Enhance your guest manual and share it.
+
+<Columns cols={3}>
+  <Card title="Customize Content" icon="edit-3" href="/docs/customize">
+    Add house rules, local guides, and emergency contacts.
+  </Card>
+
+  <Card title="Share with Guests" icon="share-2" href="/docs/sharing">
+    Generate QR codes, links, or auto-emails for seamless delivery.
+  </Card>
+
+  <Card title="Analytics" icon="bar-chart-3" href="/docs/analytics">
+    Track popular questions and update your manual accordingly.
+  </Card>
+</Columns>
+
+<Expandable title="Common Setup Issues" default-open="false">
+  - **Calendar sync fails?** Ensure the ICS link is public and refresh the connection.
+  - **Chat not responding?** Check property ID in embed code matches your dashboard.
+  - Need help? Contact support@alfiehost.com.
+</Expandable>
+
+Your Alfie Host manual is now live. Guests enjoy interruption-free stays, boosting your reviews.

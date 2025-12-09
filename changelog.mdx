@@ -1,0 +1,107 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released for Alfie Host.
+---
+
+## Stay Up to Date
+
+Alfie Host releases updates regularly to enhance your guest experience. You receive automatic notifications in your dashboard when new versions deploy. Review changes here to understand new features, improvements, and fixes.
+
+<Callout kind="info">
+  Enable email notifications in your account settings to stay informed about releases.
+</Callout>
+
+## Recent Releases
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement", "bugfix"]}>
+
+## New Features
+
+- Enhanced AI responses now handle complex queries about local dining and transportation with more accurate, context-aware answers.
+- Added customizable response templates for check-in instructions and house rules.
+
+## Improvements
+
+- Optimized chat performance for `<100ms` response times during peak hours.
+- Improved natural language understanding for accents and informal phrasing.
+
+## Bug Fixes
+
+- Fixed intermittent failures in property-specific recommendations.
+- Resolved issue where guests saw outdated amenity lists.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Multi-property support lets you manage information across multiple listings from one dashboard.
+- Guest chat history export for review and compliance.
+
+## Breaking Changes
+
+- Updated API endpoints; migrate to new `{propertyId}` parameter in requests.
+
+## Improvements
+
+- Streamlined onboarding with one-click property duplication.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core AI chat for instant guest queries on amenities, check-in, and local tips.
+- Dashboard for hosts to edit content without coding.
+- Integration with major booking platforms.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to ensure your Alfie Host instance runs the latest version.
+
+<Steps>
+  <Step title="Check Dashboard" icon="settings">
+    Log in to your Alfie Host dashboard and navigate to the Updates section.
+  </Step>
+  <Step title="Review Changes" icon="book-open">
+    Read release notes above and test in staging if available.
+  </Step>
+  <Step title="Deploy Update" icon="rocket">
+    Click Deploy. For custom setups, use the CLI:
+
+    <CodeGroup tabs="npm,yarn">
+      ```bash
+      npm install alfiehost@latest
+      alfiehost upgrade
+      ```
+      ```bash
+      yarn add alfiehost@latest
+      yarn alfiehost upgrade
+      ```
+    </CodeGroup>
+  </Step>
+</Steps>
+
+## Quick Links
+
+<Columns cols={3}>
+  <Card title="Dashboard Guide" icon="layout-dashboard" href="/docs/dashboard">
+    Learn to manage your properties and content.
+  </Card>
+  <Card title="API Reference" icon="code" href="/docs/api">
+    Integrate Alfie Host with your systems.
+  </Card>
+  <Card title="Support" icon="help-circle" href="/docs/support">
+    Get help or report issues.
+  </Card>
+</Columns>
+
+<ExpandableGroup>
+  <Expandable title="Full Version History" default-open="false">
+    View all past releases and detailed migration guides.
+  </Expandable>
+</ExpandableGroup>
